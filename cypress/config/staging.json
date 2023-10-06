@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://www.clara.com/es-co/",
+  "env": {
+    "name": "staging"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-10-06T10:10:42.862Z",
+    "end": "2023-10-06T10:11:44.460Z",
+    "duration": 61598
+  },
+  "results": [
+    {
+      "uuid": "6c9d87f7-cfd3-48d2-9102-58a3c8618bcd",
+      "title": "",
+      "fullFile": "cypress\\integration\\clara\\features\\change-languaje.feature",
+      "file": "cypress\\integration\\clara\\features\\change-languaje.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d2a274ee-3ba4-4b3f-88de-649be9691f3e",
+          "title": "Change Languages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Change the country from Mexico to Brazil and verify the language is correct",
+              "fullTitle": "Change Languages Change the country from Mexico to Brazil and verify the language is correct",
+              "timedOut": null,
+              "duration": 15242,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "33df4713-3c63-46d4-b77b-b05b4d135bce",
+              "parentUUID": "d2a274ee-3ba4-4b3f-88de-649be9691f3e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Change the country from Brazil to Colombia and verify the language is correct",
+              "fullTitle": "Change Languages Change the country from Brazil to Colombia and verify the language is correct",
+              "timedOut": null,
+              "duration": 23826,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<h1#agiliza-todos-los-pagos-en-tu-empresa-de-forma-simple-y-transparente>' to have text 'Agiliza todos los pagos en tu empresa de forma simple y transparente888', but the text was 'Agiliza todos los pagos en tu empresa de forma simple y transparente'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<h1#agiliza-todos-los-pagos-en-tu-empresa-de-forma-simple-y-transparente>' to have text 'Agiliza todos los pagos en tu empresa de forma simple y transparente888', but the text was 'Agiliza todos los pagos en tu empresa de forma simple y transparente'\n    at Context.eval (cypress/support/step_definitions/change-language-steps.js:39:39)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": "- 'Agiliza todos los pagos en tu empresa de forma simple y transparente'\n+ 'Agiliza todos los pagos en tu empresa de forma simple y transparente888'\n"
+              },
+              "uuid": "b68c1ee5-be07-4ae1-80ea-1654ed70b7fc",
+              "parentUUID": "d2a274ee-3ba4-4b3f-88de-649be9691f3e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "33df4713-3c63-46d4-b77b-b05b4d135bce"
+          ],
+          "failures": [
+            "b68c1ee5-be07-4ae1-80ea-1654ed70b7fc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 39068,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
