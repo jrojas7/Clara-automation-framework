@@ -29,4 +29,13 @@ This is an automation framework in the Cypress tool, that covers the testing of 
 
 8. We are hidding fetch/XHR requests.
 
-Note: Please, use "cypress": "12.14.0" in order to see Allure reports. Something is wrong with the last versions. Thanks.
+Note 1: Please, use "cypress": "12.14.0" in order to see Allure reports. Something is wrong with the last versions.
+
+Note 2: In VSCode, in order to configure Cucumber, click "File > Preferences > Settings > Extensions > Cucumber Auto Complete Settings > Format Conf Override > Edit in settings.json" and add the following configuration:
+
+"cucumberautocomplete.strictGherkinCompletion": true,
+"cucumberautocomplete.steps": [
+"cypress/support/step_definitions/*.js"
+]
+
+Thanks.
